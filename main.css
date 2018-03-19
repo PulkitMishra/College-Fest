@@ -306,7 +306,7 @@ main.collapsedOpen {
 /* line 268, ../sass/_partials/_layout/_mainMenu.scss */
 
 .nav > li.active > a {
-    color: #fff;
+    color: #000;
 }
 /* line 275, ../sass/_partials/_layout/_mainMenu.scss */
 
@@ -474,7 +474,7 @@ main.collapsedOpen {
 
 .navbar_show-icons:hover,
 .fotorama--fullscreen .fotorama-info .fotorama_show-icons:hover {
-    color: #fff;
+    color: #000;
     opacity: 1;
 }
 /* line 434, ../sass/_partials/_layout/_mainMenu.scss */
@@ -487,7 +487,7 @@ main.collapsedOpen {
 
 .navbar_show-icons.active,
 .fotorama--fullscreen .fotorama-info .active.fotorama_show-icons {
-    color: #fff;
+    color: #000;
     opacity: 1;
     outline: none;
     -webkit-transition: none;
@@ -553,7 +553,7 @@ main.collapsedOpen {
 
 .main_block.main-page header > h1 {
     letter-spacing: 16px;
-    color: #fff;
+    color: #000;
 }
 /* line 59, ../sass/_partials/_layout/_page.scss */
 
@@ -565,7 +565,7 @@ main.collapsedOpen {
 .main_block > header > h1 {
     margin: 0 auto 21px;
     letter-spacing: 8px;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 /* line 73, ../sass/_partials/_layout/_page.scss */
@@ -618,7 +618,7 @@ form .main_block .subscribe input.subscribe-btn[type="email"] {
 form .main_block .subscribe input.subscribe-btn[type="button"]:active,
 .main_block .subscribe form input.subscribe-btn[type="email"]:active,
 form .main_block .subscribe input.subscribe-btn[type="email"]:active {
-    color: #fff;
+    color: #000;
 }
 /* line 123, ../sass/_partials/_layout/_page.scss */
 
@@ -658,7 +658,7 @@ form .main_block .subscribe input.subscribe-btn.open[type="email"] {
     width: 88.5%;
     margin: 0;
     height: 100%;
-    color: #fff;
+    color: #000;
     padding: 5px 18px;
     float: left;
     border: none;
@@ -677,7 +677,7 @@ form .main_block .subscribe input.subscribe-btn.open[type="email"] {
     right: 0;
     width: 47px;
     height: 48px;
-    border-color: #fff;
+    border-color: #000;
     padding: 0;
     margin: 0;
     float: left;
@@ -811,7 +811,7 @@ form .main_block input.open-info-about-app[type="email"] {
     margin: 0 0 15px 0;
     letter-spacing: 3px;
     opacity: 1;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
 /* line 339, ../sass/_partials/_layout/_page.scss */
@@ -852,7 +852,7 @@ form .main_block input.open-info-about-app[type="email"] {
 
 .main-heading {
     letter-spacing: 8px;
-    color: #fff;
+    color: #000;
 }
 /* CATEGORY GROUP */
 /* line 392, ../sass/_partials/_layout/_page.scss */
@@ -906,7 +906,7 @@ form .main_block input.open-info-about-app[type="email"] {
 /* line 435, ../sass/_partials/_layout/_page.scss */
 
 .category-group > li.active > a {
-    color: #fff;
+    color: #000;
 }
 /* line 438, ../sass/_partials/_layout/_page.scss */
 
@@ -1024,7 +1024,7 @@ form .main_block input.open-info-about-app[type="email"] {
 
 .item .item-info .team-name {
     margin-bottom: 5px;
-    color: #fff;
+    color: #000;
     letter-spacing: .9px;
 }
 /* line 551, ../sass/_partials/_layout/_page.scss */
@@ -1122,7 +1122,7 @@ form .main_block input.open-info-about-app[type="email"] {
 
 .demo .owl-item .demo-title {
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
     margin-top: 25px;
     letter-spacing: 3px;
 }
@@ -4279,18 +4279,18 @@ body.inverse {
 /* line 326, ../sass/_partials/_inverse.scss */
 
 .inverse .fotorama--fullscreen.open {
-    background-color: #fff;
+    background-color: #000;
 }
 /* line 331, ../sass/_partials/_inverse.scss */
 
 .inverse .fullscreen {
-    background-color: #fff;
+    background-color: #000;
 }
 /* line 335, ../sass/_partials/_inverse.scss */
 
 .inverse .fotorama--fullscreen .fotorama__nav-wrap {
     height: 80px;
-    background-color: #fff;
+    background-color: #000;
 }
 /* line 340, ../sass/_partials/_inverse.scss */
 
@@ -4301,7 +4301,7 @@ body.inverse {
 /* line 345, ../sass/_partials/_inverse.scss */
 
 .inverse .fotorama__stage__frame.fotorama__loaded--img.fotorama__active {
-    background-color: #fff;
+    background-color: #000;
 }
 /* line 349, ../sass/_partials/_inverse.scss */
 
