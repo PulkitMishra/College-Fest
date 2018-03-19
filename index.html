@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,6 +35,25 @@
     <div class="overlay-skyline" id="skyline" style="overflow: visible; position: fixed; top: 0; left: -50%; width:200%; height: 100vh; background: url('skyline.jpg'); background-size:cover; background-position: bottom;">
     </div>
 
+    
+    <div class="wrapp">
+
+        <div class="preload-bg">
+            <div class="preloaderWraper">
+                <span id="loadPrecent">0%</span>
+
+                <div class="scaleDiv">
+                    <object type="image/svg+xml" data="img/triangles.svg" class="genesisPreloader loading opacity" width="300" height="300">
+                    </object>
+                    <div class="black-overlay"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MAIN FIXED BOTTOM MENU -->
     <nav class="navbar navbar-fixed-bottom ">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle">
@@ -86,7 +104,7 @@
 
         <div id="pt-main" class="pt-perspective ">
 
-            
+            <!-- MAIN PAGE -->
             <div class="pt-page pt-page-1 show-timer" id="main">
 
                 
@@ -124,7 +142,9 @@
 
                 </div>
             </div>
+            <!-- END MAIN PAGE -->
 
+            <!-- ABOUT PAGE -->
             <div class="pt-page pt-page-2" id="about">
                 <div class="main_block">
                     <header>
@@ -145,6 +165,7 @@
                     </div>
                 </div>
             </div>
+            <!-- END ABOUT PAGE -->
 
             
             <div class="pt-page pt-page-3" id="services">
@@ -275,6 +296,7 @@
                 </div>
             </div>
 
+            <!-- CONTACTS PAGE -->
             <div class="pt-page pt-page-4" id="contacts">
                 <div class="main_block contacts">
                     <header>
@@ -359,12 +381,17 @@ Student 3 - +91 Mobile3
 
                             </div>
 
+                            <!--end main-block-text-->
 
                         </div>
+                        <!--end row-->
                     </div>
+                    <!--end container-->
                 </div>
             </div>
+            <!-- END CONTACTS PAGE -->
 
+            <!-- TEAMS PAGE -->
             <div class="pt-page pt-page-5" id="team">
                 <div class="main_block carousel">
                     <header>
@@ -492,12 +519,16 @@ Student 3 - +91 Mobile3
 
                                 </ul>
                                 <a href="index.html#" class="fotorama_show-icons">
+                                    <!--<i class="fa fa-share-alt"></i>-->
                                 </a>
                             </div>
                         </div>
 </div>
 </div></div>
 
+            <!-- END TEAMS PAGE -->
+
+            <!-- PORTFOLIO PAGE -->
             <div class="pt-page pt-page-6" id="events">
                 <div class="main_block carousel">
                     <header style="margin-bottom: 70px;">
@@ -627,7 +658,9 @@ Student 3 - +91 Mobile3
                     
                 </div>
             </div>
+            <!-- END PORTFOLIO PAGE -->
 
+            <!-- ABOUT APP PAGE -->
             <div class="pt-page pt-page-7" id="sponsors">
 
 
@@ -641,7 +674,21 @@ Student 3 - +91 Mobile3
                         <div class="row">
 
                             <div class="col-md-12">
-
+<!--
+                                <div class="col-md-12 col-md-12 col-sm-12 col-xs-12">
+                                    TITLE SPONSOR
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <img src="sponsor.png" alt="client-1" width="350">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br> </div>
+-->
                                 <div class="col-md-4 col-md-4 col-sm-6 col-xs-12">
                                     CO-SPONSOR
                                     <br>
@@ -682,59 +729,43 @@ Student 3 - +91 Mobile3
                                     <br> </div>
                                                         </div>
                     </div>
-
-
                 </div>
-
             </div>
-           
-    
         <style>
             #rslides1_s0 {
                 overflow: visible;
             }
         </style>
-
         <script src="jquery-1.11.2.min.js"></script>
         <script>
             $("body").mousemove(function (event) {
                 var objLeft = $("body").offset().left;
                 var objTop = $("body").offset().top;
-
                 var objCenterX = objLeft + $("body").width() / 2;
                 var objCenterY = objTop + $("body").height() / 2;
                 //            console.log((event.pageX - objCenterX));
                 $('#skyline').css('transform', 'translateX(' + -(event.pageX - objCenterX) + 'px)');
                 $('#bg-hotswap').css('transform', 'translateX(' + (event.pageX - objCenterX) / 30 + 'px)')
             });
-
             $('.navbar a').on('click', function () {
                 //            console.log('x');
                 $('#bg-hotswap').fadeOut(500).fadeIn(500);
                 setTimeout(function () {
                     $('#bg-hotswap').attr('src', 'img/bg/' + location.hash.slice(1) + '.jpg');
                 }, 500);
-
-
             });
-
             $('.navbar li').on('click', function () {
                 //            console.log('x');
                 $('#bg-hotswap').fadeOut(500).fadeIn(500);
                 setTimeout(function () {
                     $('#bg-hotswap').attr('src', 'img/bg/' + location.hash.slice(1) + '.jpg');
                 }, 500);
-
-
             });
-
             $('#submit-registration').click(function () {
-
                 $.post("php/register.php", $(".register-form").serialize(), function (response) {
                     $('#success-register').html(response);
                 });
                 return false;
-
             });
         </script>
         <script src="modernizr.custom.js"></script>
@@ -751,14 +782,8 @@ Student 3 - +91 Mobile3
         <script src="retina.js"></script>
         <script src="jquery-mousewheel.js"></script>
         <script src="main.js"></script>
-
-
-
         <noscript>
             <h1 class="no-script">Sorry! This site <strong>requires</strong> JavaScript.</h1>
         </noscript>
-
-
 </body>
-
 </html>
