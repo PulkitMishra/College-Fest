@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -403,7 +404,7 @@ Student 3 - +91 Mobile3
                         }
                     </style>
 
-                    <div class="clipCarousel cover">
+                   <center> <div class="clipCarousel cover">
 
                         <div class="item">
                             <div class="item_img">
@@ -522,7 +523,7 @@ Student 3 - +91 Mobile3
                                     <!--<i class="fa fa-share-alt"></i>-->
                                 </a>
                             </div>
-                        </div>
+                        </div></center>
 </div>
 </div></div>
 
@@ -729,43 +730,83 @@ Student 3 - +91 Mobile3
                                     <br> </div>
                                                         </div>
                     </div>
+
+
                 </div>
+
             </div>
+            <!-- END ABOUT APP PAGE -->
+
+
+
+
+
+
+
+    <!-- INFORMATION ABOUT APP -->
+    <div class="info-about-app" style="display:block !important;">
+
+        <div class="info-about-app_block">
+
+
+
+            <div class="container">
+                <div class="col-md-6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 class="section-title">Register for OUTLAWED</h1>
+                    <h3>Registration Instructions</h3>
+<br><br>
         <style>
             #rslides1_s0 {
                 overflow: visible;
             }
         </style>
+
         <script src="jquery-1.11.2.min.js"></script>
         <script>
             $("body").mousemove(function (event) {
                 var objLeft = $("body").offset().left;
                 var objTop = $("body").offset().top;
+
                 var objCenterX = objLeft + $("body").width() / 2;
                 var objCenterY = objTop + $("body").height() / 2;
                 //            console.log((event.pageX - objCenterX));
                 $('#skyline').css('transform', 'translateX(' + -(event.pageX - objCenterX) + 'px)');
                 $('#bg-hotswap').css('transform', 'translateX(' + (event.pageX - objCenterX) / 30 + 'px)')
             });
+
             $('.navbar a').on('click', function () {
                 //            console.log('x');
                 $('#bg-hotswap').fadeOut(500).fadeIn(500);
                 setTimeout(function () {
                     $('#bg-hotswap').attr('src', 'img/bg/' + location.hash.slice(1) + '.jpg');
                 }, 500);
+
+
             });
+
             $('.navbar li').on('click', function () {
                 //            console.log('x');
                 $('#bg-hotswap').fadeOut(500).fadeIn(500);
                 setTimeout(function () {
                     $('#bg-hotswap').attr('src', 'img/bg/' + location.hash.slice(1) + '.jpg');
                 }, 500);
+
+
             });
+
             $('#submit-registration').click(function () {
+
                 $.post("php/register.php", $(".register-form").serialize(), function (response) {
                     $('#success-register').html(response);
                 });
                 return false;
+
             });
         </script>
         <script src="modernizr.custom.js"></script>
@@ -782,8 +823,14 @@ Student 3 - +91 Mobile3
         <script src="retina.js"></script>
         <script src="jquery-mousewheel.js"></script>
         <script src="main.js"></script>
+
+
+
         <noscript>
             <h1 class="no-script">Sorry! This site <strong>requires</strong> JavaScript.</h1>
         </noscript>
+
+
 </body>
+
 </html>
